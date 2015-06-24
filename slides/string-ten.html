@@ -1,0 +1,21 @@
+<code>
+    <pre>
+    'mañana' === 'mañana' // false ???
+
+    <span class="fragment">'ma\xF1ana'
+    U+00F1 LATIN SMALL LETTER N WITH TILDE</span>
+
+    <span class="fragment">'ma\u006E\u0303ana'
+    U+006E LATIN SMALL LETTER N
+    + U+0303 COMBINING TILDE</span>
+
+    <span class="fragment">'mañana'.normalize('NFC') ===
+    'mañana'.normalize('NFC') // true</span>
+    </pre>
+</code>
+<aside class="notes">
+    The same glyph can be produced by different code points<br>
+    String.prototype.normalize eases searching, comparison, etc.<br>
+    Example uses Canonically-composed form (NFC)
+</aside>
+

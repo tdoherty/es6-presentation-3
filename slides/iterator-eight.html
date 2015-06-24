@@ -1,0 +1,19 @@
+<code>
+<pre>
+let iterable = {
+  [Symbol.iterator]() {
+    var n = 3, i = 1;
+    return {
+      next() {
+        if (i <= n) {
+          return {value: i, done: false};
+        }
+        return {value: undefined, done: true};
+      }
+    }
+  }
+};
+
+<span class="fragment">[...iterable]; // [1, 2, 3]</span>
+</pre>
+</code>

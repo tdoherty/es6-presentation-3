@@ -1,0 +1,20 @@
+<code>
+    <pre>
+    function* observer() {
+      console.log('Received: '+ yield);
+      console.log('Received: '+ yield);
+      console.log('Received: '+ yield);
+    }
+
+    let c = observer();
+
+    <span class="fragment">// note: no param to `next()` here
+    observer.next();</span>
+
+
+
+    </pre>
+</code>
+<aside class="notes">
+    next() can take arguments
+</aside>

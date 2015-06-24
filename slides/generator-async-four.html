@@ -1,0 +1,18 @@
+<code>
+<pre>
+function req(url) {
+  doAjax(url, function (response) {
+    it.next(response); <span style="color:yellow;"><-resume</span>
+  });
+}
+
+function* async() {
+  let r1 = <span style="color:yellow;">{ id: 123 }</span> <span class="strike">req('/req1')</span>;
+  <span class="strike">let r2 =</span> yield req('/req2?id=<span style="color:yellow;">123</span>'); <span style="color:yellow;"><-pause</span>
+  console.log(`r2: ${r2}`);
+}
+
+var it = async();
+it.next(); // kick it off
+</pre>
+</code>

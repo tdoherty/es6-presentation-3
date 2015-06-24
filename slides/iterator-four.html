@@ -1,0 +1,12 @@
+<code>
+    <pre>
+    let str = 'Hello';
+    let iter = str[Symbol.iterator]();
+
+    <span class="fragment">// spread operator consumes iterables</span>
+    <span class="fragment">[...iter]; // ['H', 'e', 'l', 'l', 'o']</span>
+
+    <span class="fragment">// alternately
+    [...'Hello'[Symbol.iterator]()]</span>
+    </pre>
+</code>

@@ -1,0 +1,20 @@
+<code>
+    <pre>
+    let obj = {
+      [Symbol('a')]: 'localSymbol',
+      [Symbol.for('b')]: 'globalSymbol'
+    };
+
+    <span class="fragment">let s = Object.getOwnPropertySymbols(obj);</span>
+
+    <span class="fragment">s.length   // 2
+    s          // [Symbol(a), Symbol(b)]
+    s[0]       // Symbol(a)
+    </span>
+    </pre>
+</code>
+<aside class="notes">
+    We'll talk more about symbols in a few minutes
+</aside>
+
+

@@ -1,0 +1,17 @@
+<code>
+    <pre>
+    interface Iterable {
+      [Symbol.iterator]() : Iterator;
+    }
+
+    interface Iterator {
+      next() : IteratorResult;
+      return?(value? : any) : IteratorResult;
+    }
+
+    interface IteratorResult {
+      value : any;
+      done : boolean;
+    }
+    </pre>
+</code>

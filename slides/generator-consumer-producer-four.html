@@ -1,0 +1,17 @@
+<code>
+    <pre>
+    function* foo(x) {
+      var y = <span style="color:yellow;">2</span> <span class="strike">(x + 1)</span>; <span style="color:yellow;"><-resume</span>
+      <span class="strike">var z =</span> yield (y + 1); <span style="color:yellow;"><-pause</span>
+      return (x + y + z);
+    }
+
+    let iter = foo(1);
+
+    // note: no param to `next()` here
+    iter.next();  // { value: 2, done: false }
+    iter.next(2); // { value: 3, done: false }
+
+    </pre>
+</code>
+

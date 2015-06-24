@@ -1,0 +1,20 @@
+<code>
+    <pre>
+    let Thing = (function () {
+      let nameSymbol = Symbol();
+      return class Thing {
+        constructor(name) {
+          this[nameSymbol] = name;
+        }
+        get name() {
+          return this[nameSymbol];
+        }
+      };
+    })();
+
+    <span class="fragment">let it = new Thing('foo');</span>
+    <span class="fragment">it.name           // 'foo'</span>
+    <span class="fragment">it.name = 'bar';  // TypeError</span>
+    <span class="fragment">Object.getOwnPropertyNames(it) // []</span>
+    </pre>
+</code>

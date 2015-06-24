@@ -1,0 +1,17 @@
+<code>
+    <pre>
+    function* observer() {
+      console.log('Received: '+ yield);
+      console.log('Received: '+ <span style="color:yellow;">2</span>);
+      console.log('Received: '+ yield);
+    }
+
+    let c = observer();
+
+    // note: no param to `next()` here
+    observer.next();
+    observer.next(1); // Received 1
+    observer.next(2); // Received 2
+
+    </pre>
+</code>

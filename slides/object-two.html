@@ -1,0 +1,21 @@
+<code>
+    <pre>
+    let obj1 = { foo: '1' };
+    let obj2 = { bar: '2' };
+
+    <span class="fragment">Object.assign(obj1, obj2);</span>
+
+    <span class="fragment">// or</span>
+    <span class="fragment">let obj1 = Object.assign({
+      foo: '1'
+    }, obj2);</span>
+
+    <span class="fragment">obj1 // { foo: '1', bar: '2' }</span>
+
+    </pre>
+</code>
+
+<aside class="notes">
+    Replaces _.extend, $.extend, angular.extend, etc.<br>
+    Won't copy inherited, nor non-enumerable props
+</aside>

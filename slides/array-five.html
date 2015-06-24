@@ -1,0 +1,24 @@
+<code>
+    <pre>
+    let arr = [ {name: 'foo', val: '1'},
+                {name: 'bar', val: '2'},
+                {name: 'baz', val: '3'} ];
+
+    <span class="fragment">// ES5
+    function find(arr, prop, value) {
+      var len == arr.length;
+      while(len--) {
+        if (arr[len][prop] === value) {
+          return arr[len];
+        }
+      }
+    }</span>
+
+    <span class="fragment">// ES6
+    arr.find(e => e.val === '2');</span>
+    </pre>
+</code>
+<aside class="notes">
+    Replaces _.find() for arrays, though without the overloads<br>
+    provided by lodash. Still, native!
+</aside>

@@ -1,0 +1,14 @@
+<code>
+    <pre>
+    let obj = {
+      * iterable() {
+        for (let i = 1; i < 4; i++) {
+          yield i;
+        }
+      }
+    };
+
+    <span class="fragment">[...obj.iterable()] // [1, 2, 3]</span>
+    </pre>
+</code>
+

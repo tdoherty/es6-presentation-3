@@ -1,0 +1,20 @@
+<code>
+<pre>
+function req(url) {
+  doAjax(url, () => {}, (err) => {
+    it.throw('req failed');
+  });
+}
+
+function* async() {
+  try {
+    let r1 = yield req('/req1');
+  } catch (e) {
+    console.log(e);
+  }
+}
+
+var it = async();
+
+</pre>
+</code>

@@ -1,0 +1,22 @@
+<code>
+    <pre>
+    let obj1 = Object.create({
+      bar: 'baz'
+    });
+
+    obj1.foo = 'bar';
+
+    <span class="fragment">let o1Proto = Object.getPrototypeOf(obj1);
+    let obj2 = Object.assign(
+      Object.create(o1Proto),
+      obj1);</span>
+
+    <span class="fragment">obj2.bar // 'baz'</span>
+    </pre>
+</code>
+
+<aside class="notes">
+    Only copies own properties, not inherited.<br>
+    If we want it to have the same prototype, we can assign
+    to a new object with the same prototype
+</aside>

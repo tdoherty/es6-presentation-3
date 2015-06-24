@@ -1,0 +1,21 @@
+<code>
+    <pre>
+    function* foo(x) {
+      var y = yield (x + 1);
+      var z = <span style="color:yellow;">3</span> <span class="strike">(y + 1)</span>; <span style="color:yellow;"><-resume</span>
+      return (x + y + z);
+    }
+
+    let iter = foo(1);
+
+    // note: no param to `next()` here
+    iter.next();  // { value: 2, done: false }
+    iter.next(2); // { value: 3, done: false }
+    iter.next(3); // { value: 6, done: true }
+    </pre>
+</code>
+<aside class="notes">
+    Note the "return" statement. Can be used to terminate the generator
+    function at any time.
+</aside>
+

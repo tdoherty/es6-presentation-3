@@ -1,0 +1,19 @@
+<code>
+    <pre>
+    function* gen1() {
+      yield 'a';
+      yield* gen2();
+      yield 'c';
+    }
+
+    function* gen2() {
+      yield 'b';
+      yield 'c';
+    }
+
+    <span class="fragment">[...gen1()] // ['a', 'b', 'c', 'd']</span>
+    </pre>
+</code>
+<aside class="notes">
+    yielding to another generator
+</aside>

@@ -1,0 +1,11 @@
+<code>
+    <pre>
+    let sym = Symbol('foo'); // local
+    <span class="fragment">typeof sym // 'symbol'</span>
+
+    <span class="fragment">let sym2 = Symbol('foo');</span>
+    <span class="fragment">sym === sym2 // false</span>
+
+    <span class="fragment">let sym3 = Symbol.for('foo'); // global</span>
+    </pre>
+</code>

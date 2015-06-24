@@ -1,0 +1,18 @@
+<code>
+<pre>
+function req(url) {
+  doAjax(url, function (response) {
+    it.next(response);
+  });
+}
+
+function* async() {
+  let r1 = yield req('/req1');
+  let r2 = yield req(`/req2?id=${r1.id}`);
+  console.log(`r2: ${r2}`);
+}
+
+var it = async();
+
+</pre>
+</code>

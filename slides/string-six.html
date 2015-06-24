@@ -1,0 +1,13 @@
+<code>
+    <pre>
+    let str = 'Good morning Dave.';
+
+    // ES5
+    str.substr(
+      str.length - 'Dave.'.length - 1
+    ) === 'Dave.'           // true
+
+    <span class="fragment">// ES6
+    str.endsWith('Dave.')   // true
+    </pre>
+</code>
