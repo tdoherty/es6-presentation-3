@@ -1,0 +1,11 @@
+{
+  "generator-reveal": {
+    "presentationTitle": "ECMAScript 6 In Depth - Part II",
+    "packageVersion": "0.0.0",
+    "revealTheme": "default",
+    "useSass": false,
+    "deployToGithubPages": true,
+    "githubUsername": "tdoherty",
+    "githubRepository": "es6-presentation-2"
+  }
+}
