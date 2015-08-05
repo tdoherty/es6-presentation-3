@@ -1,0 +1,20 @@
+<code>
+    <pre>
+    let validator = {
+      set(target, property, value, receiver) {
+        if (property === 'year' &&
+            !Number.isInteger(value)) {
+          throw new TypeError();
+        }
+      }
+    };
+
+    let car = new Proxy({}, validator);
+
+    <span class="fragment">car.year = 1963  // 1963</span>
+    <span class="fragment">car.year = 'foo' // TypeError</span>
+    </pre>
+</code>
+<aside class="notes">
+
+</aside>

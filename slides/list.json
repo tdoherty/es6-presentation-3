@@ -12,6 +12,45 @@
         "number-two.html",
         "number-three.html"
     ],
+    [
+        "math-one.html",
+        "math-two.html",
+        "math-three.html"
+    ],
+    [
+        "regex-one.html",
+        "regex-two.html",
+        "regex-three.html"
+    ],
+    [
+        "data-structures.html",
+        "set-one.html",
+        "set-two.html",
+        "set-three.html",
+        "map-one.html",
+        "weakset-one.html",
+        "weakmap-one.html"
+    ],
+    [
+        "reflect-one.html"
+    ],
+    [
+        "proxies-one.html",
+        "proxies-two.html",
+        "proxies-three.html",
+        "proxies-four.html",
+        "proxies-four-b.html",
+        "proxies-five.html",
+        "proxies-six.html",
+        "proxies-seven.html"
+    ],
+    [
+        "tail-calls-one.html"
+    ],
+    [
+        "promises-one.html"
+    ],
+    "whats-next.html",
     "resources.html",
     "thanks.html"
 ]

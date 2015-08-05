@@ -1,0 +1,22 @@
+<code>
+<pre>
+let tracer = {
+  get(target, trapName, receiver) {
+    return function (...args) {
+      console.log(trapName.toUppercase() +
+                  ' ' +
+                  args.slice(1));
+      return Reflect[trapName](...args);
+    }
+  }
+};
+
+let p = new Proxy({}, tracer);
+
+<span class="fragment">p.foo = 'bar' // SET foo,'bar',[object Object]</span>
+<span class="fragment">p.foo         // GET foo,[object Object]</span>
+</pre>
+</code>
+<aside class="notes">
+
+</aside>
