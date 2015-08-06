@@ -1,0 +1,21 @@
+<code>
+    <pre>
+    let m = new Map();
+    let strKey = 'stringy';
+    let objKey = {};
+    let fnKey = () => {};
+
+    <span class="fragment">m.set(strKey, `value for 'stringy'`);</span>
+    <span class="fragment">m.set(objKey, 'value for objKey');</span>
+    <span class="fragment">m.set(fnKey, 'value for fnKey');</span>
+    <span class="fragment">m.size            // 3</span>
+
+    <span class="fragment">m.get(strKey);    // "value for 'stringy'"</span>
+    <span class="fragment">m.get(objKey);    // "value for objKey"</span>
+    <span class="fragment">m.get(fnKey);     // "value for fnKey"</span>
+
+    <span class="fragment">m.get('stringy'); // "value for 'stringy'"</span>
+    <span class="fragment">m.get({});        // undefined</span>
+    <span class="fragment">m.get(() => {});  // undefined</span>
+    </pre>
+</code>

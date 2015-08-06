@@ -28,8 +28,15 @@
         "set-two.html",
         "set-three.html",
         "map-one.html",
+        "map-two.html",
+        "map-three.html",
+        "map-four.html",
+        "map-five.html",
         "weakset-one.html",
-        "weakmap-one.html"
+        "weakmap-one.html",
+        "weakmap-two.html",
+        "weakmap-three.html",
+        "weakmap-four.html"
     ],
     [
         "reflect-one.html"
@@ -48,7 +55,9 @@
         "tail-calls-one.html"
     ],
     [
-        "promises-one.html"
+        "promises-one.html",
+        "promises-two.html",
+        "promises-three.html"
     ],
     "whats-next.html",
     "resources.html",
