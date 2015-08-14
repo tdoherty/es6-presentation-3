@@ -87,7 +87,6 @@
                 "data-transition": "fade"
             }
         },
-
         "tail-calls-three.html",
         "tail-calls-four.html"
     ],
@@ -108,9 +107,11 @@
     ],
     [
         "wrapup.html",
-        "wrapup-two.html"
+        "wrapup-two.html",
+        "wrapup-three.html"
     ],
     "whats-next.html",
+    "why-javascript3.html",
     "resources.html",
     "thanks.html"
 ]
