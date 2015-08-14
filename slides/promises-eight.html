@@ -1,0 +1,24 @@
+<code>
+<pre>
+<!--// timeout a request with Promise.race()-->
+
+function timeout(ms) {
+  return new Promise((resolve, reject) => {
+    setTimeout(resolve, ms);
+  });
+}
+
+<span class="fragment">Promise.race([
+  httpGet('http://somesite.com'),
+  timeout(5000).then(() => {
+    throw new Error('Timed out')
+  })
+])
+.then((value) => {...})
+.catch((reason) => {...});</span>
+</pre>
+</code>
+
+<aside class="notes">
+
+</aside>

@@ -1,0 +1,21 @@
+<code>
+<pre>
+// from part II
+function req(url) {
+  doAjax(url, function (response) {
+    it.next(response);
+  });
+}
+
+function* async() {
+  let r1 = yield req('/req1');
+  let r2 = yield req(`/req2?id=${r1.id}`);
+  console.log(`r2: ${r2}`);
+}
+
+var it = async();
+it.next(); // kick it off
+
+<span class="fragment">... we can do better, with promises</span>
+</pre>
+</code>

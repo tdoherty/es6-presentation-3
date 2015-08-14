@@ -6,6 +6,7 @@
             !Number.isInteger(value)) {
           throw new TypeError();
         }
+        Reflect.set(target, property, value);
       }
     };
 

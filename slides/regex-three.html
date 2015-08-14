@@ -1,14 +1,20 @@
-<h2>Regex Data Properties</h2>
+<h2>Regex Prototype Properties</h2>
 
-<p class="fragment">source: the pattern being evaluated</p>
-    <code>
-        <pre class="fragment">
-          /xyz/ig.source // 'xyz'
-        </pre>
-    </code>
-<p class="fragment">flags: the flags used when evaluating</p>
+<p class="fragment">flags: the flags used when searching</p>
     <code>
         <pre class="fragment">
           /xyz/ig.flags // 'gi'
+        </pre>
+    </code>
+<p class="fragment">sticky: was the sticky flag specified</p>
+    <code>
+        <pre class="fragment">
+          /xyz/y.sticky // true
+        </pre>
+    </code>
+<p class="fragment">unicode: was the unicode flag specified</p>
+    <code>
+        <pre class="fragment">
+          /xyz/u.unicode // true
         </pre>
     </code>

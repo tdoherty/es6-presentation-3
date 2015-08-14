@@ -2,12 +2,11 @@
     "index.html",
     [
         "previously.html",
-        "why-javascript2.html",
-        "why-javascript.html",
-        "why-javascript3.html"
+        "why-javascript.html"
     ],
     "overview.html",
     [
+        "number-one-a.html",
         "number-one.html",
         "number-two.html",
         "number-three.html"
@@ -20,6 +19,8 @@
     [
         "regex-one.html",
         "regex-two.html",
+        "regex-two-b.html",
+        "regex-two-c.html",
         "regex-three.html"
     ],
     [
@@ -33,31 +34,81 @@
         "map-four.html",
         "map-five.html",
         "weakset-one.html",
+        "weakset-two.html",
         "weakmap-one.html",
         "weakmap-two.html",
         "weakmap-three.html",
         "weakmap-four.html"
     ],
     [
-        "reflect-one.html"
+        "reflect-one.html",
+        "reflect-two.html"
     ],
     [
         "proxies-one.html",
         "proxies-two.html",
         "proxies-three.html",
-        "proxies-four.html",
         "proxies-four-b.html",
+        "proxies-four.html",
         "proxies-five.html",
         "proxies-six.html",
         "proxies-seven.html"
     ],
     [
-        "tail-calls-one.html"
+        "tail-calls-one.html",
+        "tail-calls-two.html",
+        {
+            "filename": "tail-calls-two-b.html",
+            "attr": {
+                "data-transition": "fade"
+            }
+        },
+        {
+            "filename": "tail-calls-two-c.html",
+            "attr": {
+                "data-transition": "fade"
+            }
+        },
+        {
+            "filename": "tail-calls-two-d.html",
+            "attr": {
+                "data-transition": "fade"
+            }
+        },
+        {
+            "filename": "tail-calls-two-e.html",
+            "attr": {
+                "data-transition": "fade"
+            }
+        },
+        {
+            "filename": "tail-calls-two-f.html",
+            "attr": {
+                "data-transition": "fade"
+            }
+        },
+
+        "tail-calls-three.html",
+        "tail-calls-four.html"
     ],
     [
         "promises-one.html",
         "promises-two.html",
-        "promises-three.html"
+        "promises-three.html",
+        "promises-four.html",
+        "promises-nine.html",
+        "promises-five.html",
+        "promises-six.html",
+        "promises-seven.html",
+        "promises-eight.html",
+        "promises-ten-a.html",
+        "promises-ten.html",
+        "promises-eleven.html",
+        "promises-twelve.html"
+    ],
+    [
+        "wrapup.html",
+        "wrapup-two.html"
     ],
     "whats-next.html",
     "resources.html",

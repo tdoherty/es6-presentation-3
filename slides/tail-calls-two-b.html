@@ -1,0 +1,19 @@
+<code>
+    <pre>
+    "use strict";
+
+    function baz(bim) {
+      return bim + 1;
+    }
+
+    function foo(bar) {
+      bar += 1;
+      return baz(bar); <span class="fragment"><-PTC</span>
+    }
+
+    <span class="fragment">function foo(bar) {
+      bar += 1;
+      return 1 + baz(bar); <span class="fragment"><-<span style="color:red;">!PTC</span></span>
+    }</span>
+    </pre>
+</code>

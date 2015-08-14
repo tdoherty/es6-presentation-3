@@ -1,0 +1,12 @@
+<code>
+<pre>
+function* async() {
+  // use httpGet, which returns a promise
+  let r1 = yield httpGet('/req1');
+  let r2 = yield httpGet(`/req2?id=${r1.id}`);
+  console.log(`r2: ${r2}`);
+}
+
+<span class="fragment">spawnGenerator(async);</span>
+</pre>
+</code>

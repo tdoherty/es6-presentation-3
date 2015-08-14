@@ -1,0 +1,22 @@
+<code>
+<pre>
+let promises = [
+  'http://somesite.com/path1',
+  'http://somesite.com/path2
+].map(httpGet);
+
+Promise.all(promises)
+  .then((values) => {
+    values.forEach((value) => {
+      // do something on success
+    });
+  })
+  .catch((reason) => {
+    // gets first rejection
+  );
+</pre>
+</code>
+
+<aside class="notes">
+
+</aside>

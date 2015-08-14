@@ -1,0 +1,18 @@
+<code>
+    <pre>
+    '\uD83D\uDCA9' // 💩 U+1F4A9 PILE OF POO
+
+    <span class="fragment">/\uD83D/.test('\uD83D\uDCA9')
+    // true</span>
+
+    <span class="fragment">/\uD83D/u.test('\uD83D\uDCA9')
+    // false</span>
+
+    <span class="fragment">/\uD83D\uDCA9/u.test('\uD83D\uDCA9')
+    // true</span>
+
+    <span class="fragment">/\u{1F4A9}/u.test('\uD83D\uDCA9')
+    // true</span>
+
+    </pre>
+</code>

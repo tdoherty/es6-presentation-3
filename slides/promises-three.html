@@ -2,9 +2,10 @@
 
 <ul>
     <li class="fragment">
-        prototype.then(onResolved, onRejected) - returns a new promise that resolves when all the iterable's promises have resolved
+        Promise.prototype.then(onResolved, onRejected) - appends resolve/reject handlers to a promise, and returns a new Promise resolving to the returned value
+        of the called handler<br><br>
     </li>
     <li class="fragment">
-        Promise.catch(onRejected) - returns a promise that resolves/rejects when one of the iterable's promises values has resolved/rejected
+        Promise.catch(onRejected) - appends a reject handler to the promise, and returns a new Promise resolving to the value of the called handler
     </li>
 </ul>
