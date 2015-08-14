@@ -2,200 +2,116 @@
     "index.html",
     [
         "previously.html",
-        "why-javascript2.html",
-        "why-javascript.html",
-        "why-javascript3.html",
-        "why-javascript-four.html"
+        "why-javascript.html"
     ],
     "overview.html",
     [
-        "object-one.html",
-        "object-two.html",
-        "object-two-b.html",
-        "object-three.html",
-        "object-four.html",
-        "object-five.html"
+        "number-one-a.html",
+        "number-one.html",
+        "number-two.html",
+        "number-three.html"
     ],
     [
-        "array-one.html",
-        "array-two.html",
-        "array-three.html",
-        "array-four.html",
-        "array-five.html",
-        "array-six.html",
-        "array-seven.html",
-        "array-eight.html",
-        "array-nine.html"
+        "math-one.html",
+        "math-two.html",
+        "math-three.html"
     ],
     [
-        "string-one.html",
-        "string-two.html",
-        "string-two-b.html",
-        "string-three.html",
-        "string-four.html",
-        "string-five.html",
-        "string-six.html",
-        "string-seven.html",
-        "string-eight.html",
-        "string-ten.html",
-        "string-nine.html"
+        "regex-one.html",
+        "regex-two.html",
+        "regex-two-b.html",
+        "regex-two-c.html",
+        "regex-three.html"
     ],
     [
-        "symbols-one.html",
-        "symbols-two.html",
-        "symbols-three.html",
-        "symbols-four.html",
-        "symbols-five.html"
+        "data-structures.html",
+        "set-one.html",
+        "set-two.html",
+        "set-three.html",
+        "map-one.html",
+        "map-two.html",
+        "map-three.html",
+        "map-four.html",
+        "map-five.html",
+        "weakset-one.html",
+        "weakset-two.html",
+        "weakmap-one.html",
+        "weakmap-two.html",
+        "weakmap-three.html",
+        "weakmap-four.html"
     ],
     [
-        "iterator-one.html",
-        "iterator-two.html",
-        "iterator-three.html",
-        "iterator-four.html",
-        "iterator-five.html",
-        "iterator-six.html",
-        "iterator-seven.html",
-        "iterator-seven-b.html",
-        "iterator-seven-c.html",
-        "iterator-eight-b.html",
-        "iterator-eight.html"
+        "reflect-one.html",
+        "reflect-two.html"
     ],
     [
-        "generator-one.html",
-        "generator-one-b.html",
-        "generator-two-b.html",
-        "generator-two.html",
-        {
-            "filename": "generator-three.html",
-            "attr": {
-                "data-transition": "fade"
-            }
-        },
-        {
-            "filename": "generator-four.html",
-            "attr": {
-                "data-transition": "fade"
-            }
-        },
-        {
-            "filename": "generator-five.html",
-            "attr": {
-                "data-transition": "fade"
-            }
-        },
-        {
-            "filename": "generator-six.html",
-            "attr": {
-                "data-transition": "fade"
-            }
-        },
-        {
-            "filename": "generator-seven.html",
-            "attr": {
-                "data-transition": "fade"
-            }
-        },
-        "generator-nine.html",
-        "generator-combinator-one.html",
-        "generator-combinator.html",
-        "generator-eight.html",
-        "generator-consumer-one.html",
-        {
-            "filename": "generator-consumer-two.html",
-            "attr": {
-                "data-transition": "fade"
-            }
-        },
-        {
-            "filename": "generator-consumer-three.html",
-            "attr": {
-                "data-transition": "fade"
-            }
-        },
-        {
-            "filename": "generator-consumer-four.html",
-            "attr": {
-                "data-transition": "fade"
-            }
-        },
-        {
-            "filename": "generator-consumer-five.html",
-            "attr": {
-                "data-transition": "fade"
-            }
-        },
-        "generator-consumer-producer-one.html",
-        {
-            "filename": "generator-consumer-producer-two.html",
-            "attr": {
-                "data-transition": "fade"
-            }
-        },
-        {
-            "filename": "generator-consumer-producer-three.html",
-            "attr": {
-                "data-transition": "fade"
-            }
-        },
-        {
-            "filename": "generator-consumer-producer-four.html",
-            "attr": {
-                "data-transition": "fade"
-            }
-        },
-        {
-            "filename": "generator-consumer-producer-five.html",
-            "attr": {
-                "data-transition": "fade"
-            }
-        },
-        "generator-async-one.html",
-        {
-            "filename": "generator-async-two.html",
-            "attr": {
-                "data-transition": "fade"
-            }
-        },
-        {
-            "filename": "generator-async-three.html",
-            "attr": {
-                "data-transition": "fade"
-            }
-        },
-        {
-            "filename": "generator-async-four.html",
-            "attr": {
-                "data-transition": "fade"
-            }
-        },
-        {
-            "filename": "generator-async-five.html",
-            "attr": {
-                "data-transition": "fade"
-            }
-        },
-        "generator-async-six.html",
-        {
-            "filename": "generator-async-seven.html",
-            "attr": {
-                "data-transition": "fade"
-            }
-        },
-        {
-            "filename": "generator-async-eight.html",
-            "attr": {
-                "data-transition": "fade"
-            }
-        },
-        {
-            "filename": "generator-async-nine.html",
-            "attr": {
-                "data-transition": "fade"
-            }
-        }
+        "proxies-one.html",
+        "proxies-two.html",
+        "proxies-three.html",
+        "proxies-four-b.html",
+        "proxies-four.html",
+        "proxies-five.html",
+        "proxies-six.html",
+        "proxies-seven.html"
     ],
+    [
+        "tail-calls-one.html",
+        "tail-calls-two.html",
+        {
+            "filename": "tail-calls-two-b.html",
+            "attr": {
+                "data-transition": "fade"
+            }
+        },
+        {
+            "filename": "tail-calls-two-c.html",
+            "attr": {
+                "data-transition": "fade"
+            }
+        },
+        {
+            "filename": "tail-calls-two-d.html",
+            "attr": {
+                "data-transition": "fade"
+            }
+        },
+        {
+            "filename": "tail-calls-two-e.html",
+            "attr": {
+                "data-transition": "fade"
+            }
+        },
+        {
+            "filename": "tail-calls-two-f.html",
+            "attr": {
+                "data-transition": "fade"
+            }
+        },
+        "tail-calls-three.html",
+        "tail-calls-four.html"
+    ],
+    [
+        "promises-one.html",
+        "promises-two.html",
+        "promises-three.html",
+        "promises-four.html",
+        "promises-nine.html",
+        "promises-five.html",
+        "promises-six.html",
+        "promises-seven.html",
+        "promises-eight.html",
+        "promises-ten-a.html",
+        "promises-ten.html",
+        "promises-eleven.html",
+        "promises-twelve.html"
+    ],
+    [
+        "wrapup.html",
+        "wrapup-two.html",
+        "wrapup-three.html"
+    ],
+    "whats-next.html",
+    "why-javascript3.html",
     "resources.html",
-    "thanks.html",
-    "iterator-seven-b.html",
-    "iterator-seven-c.html"
+    "thanks.html"
 ]

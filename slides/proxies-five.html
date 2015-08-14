@@ -1,0 +1,19 @@
+<code>
+    <pre>
+    let handler = {
+      get(target, property, receiver) {
+        return property in target ?
+          target[property] :
+          42;
+      }
+    };
+
+    let p = new Proxy({foo: 'bar'}, handler);
+
+    <span class="fragment">p.foo            // 'bar'</span>
+    <span class="fragment">p.meaningOfLife  // 42</span>
+    </pre>
+</code>
+<aside class="notes">
+
+</aside>

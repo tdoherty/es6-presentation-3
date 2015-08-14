@@ -1,0 +1,18 @@
+<code>
+<pre>
+function factorial(n) {
+  return facHelper(n, 1);
+}
+
+function facHelper(n, acc) {
+  if (n == 1) {
+    return acc;
+  } else {
+    return facHelper(n-1, n * acc); <span class="fragment"><-PTC</span>
+  }
+}
+
+<span class="fragment">factorial(1); // 1</span>
+<span class="fragment">factorial(5); // 120</span>
+</pre>
+</code>

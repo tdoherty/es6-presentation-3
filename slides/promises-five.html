@@ -1,0 +1,25 @@
+<code>
+<pre>
+function httpGet(url) {
+  return new Promise((resolve, reject) => {
+    var request = new XMLHttpRequest();
+    request.onreadystatechange = () => {
+      if (this.status === 200) {
+        resolve(this.response);
+      } else {
+        reject(new Error(this.statusText));
+      }
+    }
+    request.onerror = () => {
+      reject(new Error(this.statusText));
+    };
+    request.open('GET', url);
+    request.send();
+  });
+}
+</pre>
+</code>
+
+<aside class="notes">
+    Fetch API
+</aside>

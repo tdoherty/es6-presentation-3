@@ -1,0 +1,15 @@
+<code>
+    <pre>
+    let m = new Map([
+        ['k1', 'v1'],
+        ['k2', 'v2']
+    ]);
+
+    <span class="fragment">for (let [key, value] of m) {}</span>
+    <span class="fragment">for (let key of m.keys()) {}</span>
+    <span class="fragment">for (let value of m.values()) {}</span>
+    <span class="fragment">for (let [key, value] of m.entries) {}</span>
+    <span class="fragment">m.forEach((key, value) => {});</span>
+    <span class="fragment">[...m] // [['k1', 'v1'], ['k2', 'v2']]</span>
+    </pre>
+</code>

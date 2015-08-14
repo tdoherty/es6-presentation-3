@@ -1,0 +1,17 @@
+<code>
+<pre>
+function forEach(arr, cb, start = 0) {
+  if (0 <= start && start < arr.length) {
+    callback(arr[start], start, arr);
+    return forEach(arr, cb, start+1); <span class="fragment"><-PTC</span>
+  }
+}
+
+<span class="fragment">forEach(['a', 'b'], (el, i) => {
+  console.log(`${i}. ${el}`)
+});</span>
+
+<span class="fragment">// 1. a</span>
+<span class="fragment">// 2. b</span>
+</pre>
+</code>

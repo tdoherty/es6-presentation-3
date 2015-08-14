@@ -1,0 +1,15 @@
+<code>
+    <pre>
+    let processedObjects = new WeakSet();
+
+    function processObject(obj) {
+      // ... do processing
+      processedObjects.add(obj);
+      return obj;
+    }
+
+    function isProcessed(obj) {
+      return processedObjects.has(obj);
+    }
+    </pre>
+</code>

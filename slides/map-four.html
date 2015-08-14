@@ -1,0 +1,12 @@
+<code>
+    <pre>
+    let m = new Map();
+
+    m.set(NaN, 'Not a Number');
+    <span class="fragment">m.get(NaN) // "Not a Number"</span>
+
+    <span class="fragment">let otherNaN = Number('foo');</span>
+    <span class="fragment">m.get(otherNaN) // "Not a Number"</span>
+
+    </pre>
+</code>

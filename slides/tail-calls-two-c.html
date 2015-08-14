@@ -1,0 +1,27 @@
+<div style="float:left; width: 50%;">
+<code>
+<pre>
+"use strict";
+
+function baz(bim) {
+  return bim + 1; // A
+}
+
+function foo(bar) {
+  bar += 1;
+  return baz(bar); // B
+}
+
+foo(1); // C
+</pre>
+</code>
+
+</div>
+<div style="float:right; height:480px; width:40%; font-size: smaller">
+   <div class="frame-stack" style="bottom: 0;">
+       <ul style="list-style: none">
+           <li>foo = function () {...}</li>
+           <li>bar = function () {...}</li>
+       </ul>
+   </div>
+</div>

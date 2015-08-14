@@ -1,0 +1,24 @@
+<code>
+<pre>
+function spawnGenerator(g) {
+  var it = g(), ret;
+
+  (function iterate(val){
+    ret = it.next(val);
+
+    if (!ret.done) {
+      if ('then' in ret.value) {
+        ret.value.then(iterate);
+      } else {
+        setTimeout(() => {
+          iterate(ret.value);
+        }, 0);
+      }
+    }
+  })();
+}
+</pre>
+</code>
+<aside class="notes">
+    "poor man's promise check" and spawn code form Kyle Simpson
+</aside>

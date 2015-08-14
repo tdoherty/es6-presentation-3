@@ -1,0 +1,21 @@
+<code>
+<pre>
+let wm = new WeakMap();
+let el = document.querySelector('.element');
+
+wm.set(el, 'el data');
+
+wm.has(el); // true
+wm.get(el); // "el data"
+
+el.parentNode.removeChild(el);
+el = null   // remove local reference*
+wm.has(el); // false
+wm.get(el); // undefined
+</pre>
+</code>
+
+<aside class="notes">
+    *this is sort of cheating, we can't look up value by 'null' and el is
+    no longer the key we used to insert
+</aside>

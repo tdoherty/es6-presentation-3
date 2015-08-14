@@ -1,0 +1,17 @@
+<code>
+    <pre>
+        let s = new Set();
+
+        <span class="fragment">s.add(1);    // Set {1}</span>
+        <span class="fragment">s.add(2);    // Set {1, 2}</span>
+        <span class="fragment">s.add(3);    // Set {1, 2, 3}</span>
+        <span class="fragment">s.size;      // 3</span>
+        <span class="fragment">s.has(3);    // true</span>
+        <span class="fragment">[...s]       // [1, 2, 3]</span>
+        <span class="fragment">s.add(3);    // Set {1, 2, 3}</span>
+        <span class="fragment">s.delete(3); // Set {1, 2}</span>
+        <span class="fragment">s.has(3);    // false</span>
+        <span class="fragment">s.clear();   // Set {}</span>
+        <span class="fragment">s.size;      // 0</span>
+    </pre>
+</code>
