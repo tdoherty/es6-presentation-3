@@ -1,0 +1,23 @@
+<code>
+<pre>
+let membrane = {
+  get(target, trapName, receiver) {
+    return function (...args) {
+      // ...threat mitigation
+      return Reflect[trapName](...args);
+    }
+  }
+};
+
+let rev = Proxy.revocable(jQuery, membrane);
+let jqMembrane = rev.proxy;
+
+<span class="fragment">jqMembrane.ajax(/*...*);</span>
+<span class="fragment">// ...when done</span>
+<span class="fragment">rev.revoke()</span>
+<span class="fragment">jqMembrane.ajax(/*...*); // TypeError</span>
+</pre>
+</code>
+<aside class="notes">
+
+</aside>

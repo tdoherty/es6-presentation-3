@@ -3,15 +3,14 @@
 let wm = new WeakMap();
 let el = document.querySelector('.element');
 
-wm.set(el, 'el data');
+<span class="fragment">wm.set(el, 'el data');</span>
+<span class="fragment">wm.has(el); // true</span>
+<span class="fragment">wm.get(el); // "el data"</span>
 
-wm.has(el); // true
-wm.get(el); // "el data"
-
-el.parentNode.removeChild(el);
+<span class="fragment">el.parentNode.removeChild(el);
 el = null   // remove local reference*
 wm.has(el); // false
-wm.get(el); // undefined
+wm.get(el); // undefined</span>
 </pre>
 </code>
 

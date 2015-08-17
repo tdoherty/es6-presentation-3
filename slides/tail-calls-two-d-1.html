@@ -3,27 +3,21 @@
 <pre>
 "use strict";
 
-<span style="color:yellow;">function baz(bim) {
+function baz(bim) {
   return bim + 1; // A
-}</span>
+}
 
 function foo(bar) {
   bar += 1;
-  return baz(bar); // B
+  <span style="color: yellow;">return baz(bar); // B</span>
 }
 
 foo(1); // C
 </pre>
-    </code>
+</code>
 
 </div>
 <div style="float:right; height:450px; width:40%; font-size: smaller">
-    <div class="frame-stack" style="bottom: 200px;">
-        <ul style="list-style: none">
-            <li>bim = 3</li>
-            <li>Line B</li>
-        </ul>
-    </div>
     <div class="frame-stack" style="bottom: 100px;">
         <ul style="list-style: none">
             <li>bar = 2</li>

@@ -2,14 +2,14 @@
     <pre>
     let processedObjects = new WeakSet();
 
-    function processObject(obj) {
+    <span class="fragment">function processObject(obj) {
       // ... do processing
       processedObjects.add(obj);
       return obj;
-    }
+    }</span>
 
-    function isProcessed(obj) {
+    <span class="fragment">function isProcessed(obj) {
       return processedObjects.has(obj);
-    }
+    }</span>
     </pre>
 </code>

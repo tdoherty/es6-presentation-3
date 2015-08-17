@@ -6,12 +6,12 @@ let promises = [
 ].map(httpGet);
 
 Promise.all(promises)
-  .then((values) => {
-    values.forEach((value) => {
+  .then(values => {
+    values.forEach(value => {
       // do something on success
     });
   })
-  .catch((reason) => {
+  .catch(reason => {
     // gets first rejection
   );
 </pre>
