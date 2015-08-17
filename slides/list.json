@@ -1,5 +1,6 @@
 [
     "index.html",
+    "whoami.html",
     [
         "previously.html",
         "why-javascript.html"
@@ -8,8 +9,7 @@
     [
         "number-one-a.html",
         "number-one.html",
-        "number-two.html",
-        "number-three.html"
+        "number-two.html"
     ],
     [
         "math-one.html",
@@ -37,8 +37,7 @@
         "weakset-two.html",
         "weakmap-one.html",
         "weakmap-two.html",
-        "weakmap-three.html",
-        "weakmap-four.html"
+        "weakmap-three.html"
     ],
     [
         "reflect-one.html",
@@ -52,7 +51,8 @@
         "proxies-four.html",
         "proxies-five.html",
         "proxies-six.html",
-        "proxies-seven.html"
+        "proxies-seven.html",
+        "proxies-eight.html"
     ],
     [
         "tail-calls-one.html",
@@ -77,6 +77,18 @@
         },
         {
             "filename": "tail-calls-two-e.html",
+            "attr": {
+                "data-transition": "fade"
+            }
+        },
+        {
+            "filename": "tail-calls-two-d-1.html",
+            "attr": {
+                "data-transition": "fade"
+            }
+        },
+        {
+            "filename": "tail-calls-two-d-2.html",
             "attr": {
                 "data-transition": "fade"
             }
@@ -112,6 +124,7 @@
     ],
     "whats-next.html",
     "why-javascript3.html",
+    "wrapup-four.html",
     "resources.html",
     "thanks.html"
 ]

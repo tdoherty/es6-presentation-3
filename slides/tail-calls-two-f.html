@@ -3,14 +3,15 @@
 <pre>
 "use strict";
 
-function baz(bim) {
+<span style="color:yellow;">function baz(bim) {
   return bim + 1; // A
-}
+}</span>
 
-function foo(bar) {
+// just prior to baz()
+<span style="text-decoration: line-through;">function foo(bar) {
   bar += 1;
   return baz(bar); // B
-}
+}</span>
 
 foo(1); // C
 </pre>
